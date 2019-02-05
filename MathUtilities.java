@@ -237,7 +237,6 @@ public class MathUtilities {
      */
     public Byte multiply(byte multiplicand, byte multiplier) {
         byte retVal;
-        byte b32= 32;
         int placeHolder1, placeHolder2 , placeholder3;
         
         // not needed, but didnt clean up
@@ -247,7 +246,7 @@ public class MathUtilities {
         placeholder3 = (byte)(multiplicand * multiplier) ;
         
         // 
-        retVal = (byte)(placeholder3+b32+b32+b32);
+        retVal = (byte)(placeholder3);
         
         return retVal;
     }
